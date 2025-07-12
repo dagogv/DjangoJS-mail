@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function foo() {
+            alert("sss");
+            console.log("hey");
+        }
+
+        document.addEventListener('DOMContentLoaded', function(){
+            let mysubimt = document.getElementsByTagName('submit');
+            mysubimt.addEventListener("click", function(){
+                e.preventDefault();
+                alert("este es el submit");
+                console.log("este es el submit");
+            });
+
+            document.querySelector("#clickme").addEventListener("click", function(){
+                alert("este es el boton");
+                console.log("este es el boton");
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="compose-view">
+    <h3>New Email</h3>
+    <form id="compose-form">
+        <div class="form-group">
+            From: <input disabled class="form-control" id="sender1"
+                         value="mi@exmpale.com">
+        </div>
+
+        <div class="form-group">
+            To: <input class="form-control" id="compose-recipients">
+        </div>
+
+        <div class="form-group">
+            <input class="form-control" id="compose-subject" placeholder="Subject">
+        </div>
+
+        <textarea class="form-control" id="compose-body" placeholder="Body"></textarea>
+
+        <input type="submit" class="btn btn-primary"/>
+    </form>
+    <button id="clickme">Hola</button>
+</div>
+</body>
+</html>

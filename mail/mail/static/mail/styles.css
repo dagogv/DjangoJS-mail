@@ -1,0 +1,41 @@
+textarea {
+    min-height: 400px;
+}
+
+.sender, .recipients, .subject, .timestamp, .body, .hr {
+    padding: 0px 10px;
+    margin: 0px;
+}
+.sender, .recipients, .timestamp {
+    font-size: small;
+}
+
+.subject {
+    display: inline-block;
+}
+.timestamp {
+    float: right;
+    text-align: right;
+}
+
+.email-single {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.email-list {
+    border-style: solid;
+    border-width: thin;
+    border-color: #cccc;
+    margin: 2px;
+}
+
+
+#archive_btn {
+    float: right;
+}
+#reply_btn {
+    display: inline-block;
+}
+.email-data {
+    margin: 1px;
+}
